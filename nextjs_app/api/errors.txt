@@ -1,0 +1,6 @@
+Collecting fastapi==0.104.1
+  Using cached fastapi-0.104.1-py3-none-any.whl (92 kB)
+ERROR: Operation cancelled by user
+
+[notice] A new release of pip available: 22.2.2 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
