@@ -16,9 +16,13 @@ Transform this into a comprehensive Streamlit app with:
 
 ## Core Features
 1. **File Upload Interface**
-   - Support multiple image formats (JPG, JPEG, PNG, BMP, TIFF)
+   - Support multiple document formats:
+     - PDF files (.pdf)
+     - Word documents (.docx)  
+     - Image files (.jpg, .jpeg, .png, .bmp, .tiff)
+     - And other common document formats supported by LlamaCloud
    - Drag-and-drop functionality
-   - Image preview before processing
+   - Document preview before processing
    - File validation and size limits
 
 2. **Data Extraction & Display**

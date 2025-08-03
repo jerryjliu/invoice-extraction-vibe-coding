@@ -7,8 +7,7 @@ This repository demonstrates how to "vibe code" a full-stack invoice processing 
 This repository demonstrates **vibe coding** - rapidly building applications through iterative AI-assisted development. The goal is to transform a simple script into a full-featured application using Cursor/Claude Code.
 
 ### Prerequisites
-- Python 3.8+
-- Poetry ([Install here](https://python-poetry.org/docs/#installation))
+- Python 3.11+
 - LlamaCloud account and API key ([Get one here](https://cloud.llamaindex.ai/))
 
 ### Setup Process
@@ -17,7 +16,7 @@ This repository demonstrates **vibe coding** - rapidly building applications thr
 ```bash
 git clone <your-repo-url>
 cd invoice-extraction-vibe-coding
-poetry install
+pip install -r requirements.txt
 ```
 
 #### 2. **Set Up LlamaCloud**
@@ -40,13 +39,13 @@ LLAMA_CLOUD_AGENT_NAME=invoice_extraction_agent
 
 #### 4. **Create Extraction Agent**
 ```bash
-poetry run python create_agent.py
+python create_agent.py
 ```
 This automatically creates an extraction agent in LlamaCloud using the invoice schema from `sample_data/sample_schema.py`.
 
 #### 5. **Test Your Setup**
 ```bash
-poetry run python sample.py
+python sample.py
 ```
 This validates your configuration and runs extraction on the sample invoice. You should see structured JSON output.
 
@@ -69,7 +68,7 @@ invoice-extraction-vibe-coding/
 ├── sample.py                   # Starting point - simple extraction script
 ├── create_agent.py            # Script to create LlamaCloud extraction agent
 ├── .env.template              # Environment variables template
-├── pyproject.toml             # Poetry dependencies and project config
+├── requirements.txt           # Python dependencies
 ├── cursor_prompt.md           # Cursor prompt template for vibe coding
 └── sample_data/               # Sample invoice data
     ├── batch1-0274.jpg       # Sample invoice image
