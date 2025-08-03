@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "invoice-extraction-vibe-coding"
+version = "0.1.0"
+description = "Vibe coding demo: Transform a simple invoice extraction script into a full Streamlit app using Cursor/Claude Code"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "src", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+streamlit = "^1.28.0"
+python-dotenv = "^1.0.0"
+llama-cloud-services = "^0.1.0"
+llama-cloud = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+# Add development dependencies here if needed
+# pytest = "^7.0.0"
+# black = "^23.0.0"
+# flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# Optional: Add convenience scripts
+create-agent = "create_agent:main"
+test-extraction = "sample:main"

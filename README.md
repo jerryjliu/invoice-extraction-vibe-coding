@@ -8,6 +8,7 @@ This repository demonstrates **vibe coding** - rapidly building applications thr
 
 ### Prerequisites
 - Python 3.8+
+- Poetry ([Install here](https://python-poetry.org/docs/#installation))
 - LlamaCloud account and API key ([Get one here](https://cloud.llamaindex.ai/))
 
 ### Setup Process
@@ -15,8 +16,8 @@ This repository demonstrates **vibe coding** - rapidly building applications thr
 #### 1. **Clone and Install**
 ```bash
 git clone <your-repo-url>
-cd jerry_invoice_streamlit
-pip install -r requirements.txt
+cd invoice-extraction-vibe-coding
+poetry install
 ```
 
 #### 2. **Set Up LlamaCloud**
@@ -39,13 +40,13 @@ LLAMA_CLOUD_AGENT_NAME=invoice_extraction_agent
 
 #### 4. **Create Extraction Agent**
 ```bash
-python create_agent.py
+poetry run python create_agent.py
 ```
 This automatically creates an extraction agent in LlamaCloud using the invoice schema from `sample_data/sample_schema.py`.
 
 #### 5. **Test Your Setup**
 ```bash
-python sample.py
+poetry run python sample.py
 ```
 This validates your configuration and runs extraction on the sample invoice. You should see structured JSON output.
 
@@ -63,12 +64,12 @@ When you're done vibe coding, compare your creation with our `app.py` to see dif
 ## 📁 Project Structure
 
 ```
-jerry_invoice_streamlit/
+invoice-extraction-vibe-coding/
 ├── app.py                      # Full-featured Streamlit application (generated)
 ├── sample.py                   # Starting point - simple extraction script
 ├── create_agent.py            # Script to create LlamaCloud extraction agent
 ├── .env.template              # Environment variables template
-├── requirements.txt            # Python dependencies
+├── pyproject.toml             # Poetry dependencies and project config
 ├── cursor_prompt.md           # Cursor prompt template for vibe coding
 └── sample_data/               # Sample invoice data
     ├── batch1-0274.jpg       # Sample invoice image
