@@ -120,7 +120,7 @@ Try the full prompt first - you might be surprised how much gets built in a sing
 ## 🔧 Features
 
 ### Current Application (`app.py`)
-- 📄 **Multi-format Support**: JPG, JPEG, PNG, BMP, TIFF
+- 📄 **Multi-format Support**: PDF, Word documents (.docx), images (JPG, PNG, etc.), and other common document formats
 - 🎨 **Professional UI**: Custom CSS styling and responsive design
 - 📊 **Data Visualization**: Structured invoice data display
 - 📈 **Analytics**: Processing metrics and status tracking
@@ -139,7 +139,7 @@ See `sample_data/sample_schema.py` for the complete Pydantic model definitions.
 
 ## 📝 Usage
 
-1. **Upload Invoice**: Drag and drop or select an invoice image
+1. **Upload Invoice**: Drag and drop or select an invoice document (PDF, Word, or image)
 2. **Extract Data**: Click the extraction button to process with LlamaCloud
 3. **View Results**: See structured data in formatted tables and JSON
 4. **Track History**: View processed invoices in the history tab
@@ -158,8 +158,8 @@ agent_name = "your-agent-name"
 ### Common Issues
 - **API Key**: Ensure your LlamaCloud API key is valid and in `.env`
 - **Dependencies**: Run `pip install -r requirements.txt`
-- **File Formats**: Only image formats are supported
-- **File Size**: Keep images under 10MB for best performance
+- **File Formats**: Supports PDF, Word documents, images, and other common document formats
+- **File Size**: Keep documents under 10MB for best performance
 
 ## 🤝 Contributing
 
