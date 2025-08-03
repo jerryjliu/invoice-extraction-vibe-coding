@@ -1,4 +1,4 @@
 streamlit>=1.28.0
-python-dotenv>=1.0.0
-llama-cloud-services>=0.1.0
-llama-cloud>=0.1.0 
+python-dotenv>=1.1.1
+llama-cloud-services==0.6.49
+llama-cloud==0.1.34
