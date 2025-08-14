@@ -1,6 +1,14 @@
-# Invoice Processing App - Vibe Coding Example
+# Invoice Processing App - Vibe Coding a Web App
 
 This repository demonstrates how to "vibe code" a full-stack invoice processing application using Cursor/Claude Code from a simple starting file. This showcases building a complete Streamlit application with LlamaCloud's document extraction capabilities.
+
+## 🎯 What This Repository Is Capable Of
+
+This repository provides a complete end-to-end solution for building intelligent document processing applications:
+
+1. **Vibe Coding Templates to Create Full Web Applications**: Provides comprehensive prompts that can be used alongside coding assistants like cursor to one-shot transform simple scripts into production web applications
+2. **LlamaCloud Integration**: Automatically creates and configures LlamaExtract extraction agents using predefined Pydantic schemas for structured data extraction
+7. **Sample scripts**: Sample scripts that can be used as context for coding assistants while generating new streamlit apps!
 
 ## 🚀 Quick Start - Vibe Coding Your Own App
 
