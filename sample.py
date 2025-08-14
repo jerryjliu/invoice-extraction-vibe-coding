@@ -20,11 +20,11 @@ PROJECT_ID = os.getenv("LLAMA_CLOUD_PROJECT_ID", "your-project-id-here")
 ORGANIZATION_ID = os.getenv("LLAMA_CLOUD_ORGANIZATION_ID", "your-organization-id-here")
 AGENT_NAME = os.getenv("LLAMA_CLOUD_AGENT_NAME", "your-agent-name-here")
 
-# Sample document path
-SAMPLE_DOCUMENT = "sample_data/batch1-0274.jpg"
+# Sample image path
+SAMPLE_IMAGE = "sample_data/batch1-0274.jpg"
 
 def main():
-    """Run invoice extraction on sample document."""
+    """Run invoice extraction on sample image."""
     
     # Validate configuration
     if PROJECT_ID == "your-project-id-here" or ORGANIZATION_ID == "your-organization-id-here":
@@ -50,9 +50,9 @@ def main():
         agent = extract.get_agent(name=AGENT_NAME)
         print(f"✅ Successfully connected to agent: {AGENT_NAME}")
         
-        # Run extraction on sample document
-        print(f"📄 Processing sample invoice: {SAMPLE_DOCUMENT}")
-        result = agent.extract(SAMPLE_DOCUMENT)
+        # Run extraction on sample image
+        print(f"📄 Processing sample invoice: {SAMPLE_IMAGE}")
+        result = agent.extract(SAMPLE_IMAGE)
         
         # Display results
         print("✅ Extraction completed successfully!")
@@ -73,8 +73,8 @@ def main():
         print(f"❌ API Error: {e}")
         print("Check your API key and agent configuration.")
     except FileNotFoundError:
-        print(f"❌ Sample document not found: {SAMPLE_DOCUMENT}")
-        print("Make sure the sample_data directory exists with the sample document.")
+        print(f"❌ Sample image not found: {SAMPLE_IMAGE}")
+        print("Make sure the sample_data directory exists with the sample image.")
     except Exception as e:
         print(f"❌ Unexpected error: {e}")
 
